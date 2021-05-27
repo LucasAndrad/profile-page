@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import Grid from '@material-ui/core/Grid';
+import IconButton from '@material-ui/core/IconButton';
+import { twitterLogo, linkedinLogo, githubLogo } from 'src/assets';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Grid container justify="center" alignItems="center" spacing={5}>
+        <Grid item xs={12}>My image</Grid>
+        <Grid item xs={12}>Some text description</Grid>
+        <Grid item xs={4}>
+          <IconButton aria-label="github">
+            <img src={githubLogo} alt="github-logo" width="50" />
+          </IconButton>
+        </Grid>
+
+        <Grid item xs={4}>
+          <IconButton aria-label="linkedin">
+            <img src={linkedinLogo} alt="linkedin-logo" width="80" />
+          </IconButton>
+        </Grid>
+
+        <Grid item xs={4}>
+          <IconButton aria-label="twitter">
+            <img src={twitterLogo} alt="twitter-logo" width="40" />
+          </IconButton>
+        </Grid>
+      </Grid>
     </div>
   );
 }

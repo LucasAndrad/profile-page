@@ -6,4 +6,4 @@ export {
   githubLogo,
   linkedinLogo,
   twitterLogo,
-}
+};
