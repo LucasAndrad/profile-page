@@ -8,7 +8,13 @@ function App() {
   return (
     <div className="container">
       <Grid container justify="center" alignItems="center" spacing={5}>
-        <Grid item xs={12}>My image</Grid>
+        <Grid item xs={12}>
+          <img
+            className="profile-image"
+            src="https://lucas-profile.s3.amazonaws.com/lucas-profile-cut.png"
+            alt="Lucas_Andrade_profile_image"
+          />
+        </Grid>
         <Grid item xs={12}>Some text description</Grid>
         <Grid item xs={4}>
           <IconButton aria-label="github">

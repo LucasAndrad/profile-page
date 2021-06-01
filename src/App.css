@@ -5,3 +5,10 @@
   text-align: center;
   padding: 0 5%;
 }
+
+.profile-image {
+  margin-top: 5%;
+  max-width: 25%;
+  max-height: 25%;
+  border-radius: 50%;
+}
