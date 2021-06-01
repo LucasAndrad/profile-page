@@ -20,15 +20,21 @@ function App() {
           </p>
         </Grid>
         <Grid item xs={4}>
-          <img src={linkedinLogo} alt="linkedin-logo" width="80" />
+          <a href="https://www.linkedin.com/in/lucasandrad" target="_blank" className="external-link">
+            <img src={linkedinLogo} alt="linkedin-logo" width="80" />
+          </a>
         </Grid>
 
         <Grid item xs={4}>
-          <img src={githubLogo} alt="github-logo" width="50" />
+          <a href="https://github.com/lucasandrad" target="_blank" className="external-link">
+            <img src={githubLogo} alt="github-logo" width="50" />
+          </a>
         </Grid>
 
         <Grid item xs={4}>
-          <img src={twitterLogo} alt="twitter-logo" width="40" />
+          <a href="https://twitter.com/lucasandrad__" target="_blank" className="external-link">
+            <img src={twitterLogo} alt="twitter-logo" width="40" />
+          </a>
         </Grid>
       </Grid>
     </div>
