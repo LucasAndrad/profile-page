@@ -1,5 +1,4 @@
 .container {
-  background-color: #ebebeb;
   color: #1b1b1b;
   height: 100vh;
   text-align: center;
@@ -11,4 +10,33 @@
   max-width: 25%;
   max-height: 25%;
   border-radius: 50%;
+}
+
+.hello-text {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: 'Rokkitt', serif;
+}
+
+.external-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .hello-text {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .profile-image {
+    margin-top: 40%;
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 50%;
+  }
 }

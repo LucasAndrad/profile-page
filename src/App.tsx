@@ -1,6 +1,5 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import IconButton from '@material-ui/core/IconButton';
 import { twitterLogo, linkedinLogo, githubLogo } from 'src/assets';
 import './App.css';
 
@@ -15,23 +14,21 @@ function App() {
             alt="Lucas_Andrade_profile_image"
           />
         </Grid>
-        <Grid item xs={12}>Some text description</Grid>
+        <Grid item xs={12}>
+          <p className="hello-text">
+            Hello there, nice to meet you. My name is Lucas Andrade, a software engineer with a lot of dreams (really, a lot). Right now I'm focus on Javascript and React. This page is just to introduce myself, later I might add a small blog here.
+          </p>
+        </Grid>
         <Grid item xs={4}>
-          <IconButton aria-label="github">
-            <img src={githubLogo} alt="github-logo" width="50" />
-          </IconButton>
+          <img src={linkedinLogo} alt="linkedin-logo" width="80" />
         </Grid>
 
         <Grid item xs={4}>
-          <IconButton aria-label="linkedin">
-            <img src={linkedinLogo} alt="linkedin-logo" width="80" />
-          </IconButton>
+          <img src={githubLogo} alt="github-logo" width="50" />
         </Grid>
 
         <Grid item xs={4}>
-          <IconButton aria-label="twitter">
-            <img src={twitterLogo} alt="twitter-logo" width="40" />
-          </IconButton>
+          <img src={twitterLogo} alt="twitter-logo" width="40" />
         </Grid>
       </Grid>
     </div>
